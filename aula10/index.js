@@ -1,17 +1,31 @@
-const name = 'Lars'; // str
-const name1 = "Lars"; // str
-const name2 = `Lars`; // str
-const num1 = 10; // number
-const num2 = 10.52; // number
-let studentName; // undefined -> doesn't points anywhere in memory
-const studentLastname = null; // 
-const approved = false; // bool
+/**
+ * Arithmetic
+ * + Addition / Concatenation
+ * - / * **
+ * % Rest of the division
+ * ++ Increment
+ * -- Decrement
+ */
 
-let a = 2;
-const b = a;
-console.log(a, b);
+let num1 = 2;
+const num2 = 10;
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 ** num2);
+console.log(num1 % num2);
 
-a = 3;
-console.log(a, b);
+console.log(num1++);
+console.log(++num1);
+console.log(num1--);
+console.log(--num1);
 
+num1 += 50;
+console.log(num1);
 
+// JS can do math with numbers in strings!
+const numA = 10;
+const numB = Number('4.24');
+console.log(numA * numB)
+console.log(typeof numB);
