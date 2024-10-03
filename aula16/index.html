@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise with Math and Number Objects</title>
+</head>
+<body>
+    <h1>Math and Number Objects Exercise</h1>
+    <script>
+        const your_number = prompt('Type your number.');
+        document.body.innerHTML += `<h2><strong>Your number's ${your_number}</strong></h2><br />`;
+        document.body.innerHTML += `Square root: <strong>${your_number ** 0.5}</strong><br />`;
+        document.body.innerHTML += `${your_number} is Integer: <strong>${Number.isInteger(Number(your_number))}</strong><br />`;
+        document.body.innerHTML += `Is NaN: <strong>${Number.isNaN(Number(your_number))}</strong><br />`;
+        document.body.innerHTML += `Rounding downwards: <strong>${Math.floor(your_number)}</strong><br />`;
+        document.body.innerHTML += `Rounding upwards: <strong>${Math.ceil(your_number)}</strong><br />`;
+        document.body.innerHTML += `With two decimals: <strong>${Number(your_number).toFixed(2)}</strong><br />`;
+    </script>
+    
+</body>
+</html>

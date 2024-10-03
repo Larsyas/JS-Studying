@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula13</title>
+</head>
+<body>
+    <script>
+        const person_name = prompt('Type your name.');
+        let onlyLetters = person_name.replace(/[^a-zA-Z]/g, "");
+        let last_3_letters = onlyLetters.slice(-3);
+
+        document.body.innerHTML += `Your name's: ${person_name}<br />`;
+        document.body.innerHTML += `Your name has ${onlyLetters.length} letters <br />`;
+        document.body.innerHTML += `Your name's second letter is: ${person_name[1]}<br />`;
+        document.body.innerHTML += `What is the first index of letter A in your name? ${person_name.indexOf('a')}<br />`;
+        document.body.innerHTML += `What is the last index of letter A in your name? ${person_name.lastIndexOf('a')}<br />`;
+        document.body.innerHTML += `The last 3 letters of your name is: ${last_3_letters}<br />`;
+        document.body.innerHTML += `The words of your name are: ${person_name.split(' ')}<br />`;
+        document.body.innerHTML += `Your name is uppercase: ${person_name.toUpperCase()}<br />`;
+        document.body.innerHTML += `Your name is lowercase: ${person_name.toLowerCase()}<br />`;
+  </script>
+
+</body>
+</html>
