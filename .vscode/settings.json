@@ -1,13 +1,13 @@
 {
 
     "window.zoomLevel": 1,
-    "editor.fontSize": 26,
+    "editor.fontSize": 28,
     "editor.hover.enabled": true,
     "workbench.startupEditor": "none",
     "explorer.compactFolders": false,
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 22,
     "editor.rulers": [80, 120],
-    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorTheme": "Winter is Coming (Dark Blue)",
     "workbench.iconTheme": "material-icon-theme",
     "code-runner.executorMap": {
       "python": "clear ; python -u"
